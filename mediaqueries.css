@@ -1,0 +1,361 @@
+/* =============================
+   ✅ Global Animations
+============================= */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* =============================
+   ✅ Large Screens (1440px+)
+============================= */
+@media screen and (min-width: 1440px) {
+  section {
+    padding: 6rem 15%;
+  }
+
+  #profile {
+    gap: 6rem;
+  }
+
+  .section_pic-container img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .experience-wrapper {
+    gap: 4rem;
+  }
+
+  .experience-box {
+    padding: 3rem 4rem;
+  }
+
+  .experience-details-container {
+    gap: 3rem;
+  }
+
+  .article-container {
+    max-width: 400px;
+  }
+}
+
+/* =============================
+   ✅ Tablets (1024px - 1399px)
+============================= */
+@media screen and (max-width: 1399px) and (min-width: 1024px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .about-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
+    padding: 0 2rem;
+  }
+
+  .experience-wrapper {
+    padding: 0 2rem;
+    gap: 2rem;
+  }
+
+  .experience-box {
+    min-width: 280px;
+  }
+
+  .experience-details-container {
+    gap: 2rem;
+  }
+
+  .article-container {
+    max-width: 300px;
+  }
+
+  .contact-info-upper-container {
+    gap: 2rem;
+  }
+}
+
+/* =============================
+   ✅ Small Tablets & Large Mobiles (768px - 1023px)
+============================= */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  section {
+    padding: 4rem 5%;
+  }
+
+  #profile {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .section_pic-container {
+    margin: 0 auto 2rem;
+  }
+
+  .section_pic-container img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .experience-box {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .experience-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-container {
+    max-width: 80%;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    max-width: 80%;
+  }
+}
+
+/* =============================
+   ✅ Mobiles (600px - 767px)
+============================= */
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  section {
+    padding: 3rem 3%;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .section_pic-container img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .experience-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-info-container {
+    min-width: 250px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+}
+
+/* =============================
+   ✅ Small Mobiles (599px and below)
+============================= */
+@media screen and (max-width: 599px) {
+  section {
+    padding: 2rem 2%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section_pic-container img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .menu-links a {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .experience-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .experience-content article {
+    padding: 0.5rem 0;
+  }
+
+  .article-container {
+    max-width: 95%;
+  }
+
+  .project-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-info-container {
+    padding: 1rem 1.2rem;
+    min-width: 200px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.7rem 0.8rem;
+  }
+
+  .contact-form button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Touch-friendly enhancements */
+  .btn, .icon, .article-container, .details-card {
+    min-height: 44px; /* iOS touch target */
+  }
+
+  .hamburger-icon {
+    width: 28px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav { display: none; }
+  #hamburger-nav { display: flex; justify-content: space-between; align-items: center; height: 17vh; padding: 0 2rem; }
+}
+
+@media screen and (max-width: 1100px) {
+  section { padding: 4rem 3rem; }
+  #projects { padding: 4rem 5%; }
+  .project-image { height: 200px; }
+}
+
+@media screen and (max-width: 900px) {
+  #profile { flex-direction: column; text-align: center; }
+  .section_text { align-items: center; }
+  .btn-container, #socials-container { justify-content: center; }
+  .about-container { flex-direction: column; align-items: center; text-align: center; }
+  .about-details-container { text-align: center; }
+  .details-card { min-width: 100%; }
+  .experience-wrapper { flex-wrap: wrap; padding: 0 2rem; gap: 2rem; }
+  .experience-content { grid-template-columns: repeat(1, 1fr); gap: 1rem 1rem; }
+}
+
+@media screen and (max-width: 768px) {
+  .experience-details-container { flex-direction: column; align-items: center; }
+  .article-container { max-width: 90%; }
+  .project-image { height: 180px; }
+}
+
+@media screen and (max-width: 600px) {
+  .title { font-size: clamp(1.8rem, 5vw, 2.2rem); }
+  .section_pic-container img { width: 200px; height: 200px; }
+  .hamburger-icon { width: 25px; height: 18px; }
+  .menu-links { width: 180px; font-size: 0.95rem; }
+}
+
+@media screen and (max-width: 500px) {
+  .title { font-size: 1.8rem; }
+  .section_pic-container img { width: 150px; height: 150px; }
+  .btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+  .about-pic-container, .about-details-container { max-width: 100%; }
+}
+
+@media screen and (max-width: 480px) {
+  .experience-sub-title { font-size: 1.3rem; }
+  .project-btn { padding: 0.4rem 0.8rem; font-size: 0.9rem; }
+  .project-image { height: 150px; }
+}
+@media screen and (max-width: 400px) {
+  section { padding: 1.5rem 1.5%; }
+  .section_pic-container img { width: 130px; height: 130px; }
+  .btn { padding: 0.5rem 1rem; font-size: 0.85rem; }
+  .nav-links a { font-size: 0.9rem; }
+  .menu-links a { padding: 0.6rem 1.2rem; font-size: 0.85rem; }
+  .experience-box { padding: 1.5rem 1rem; }
+  .experience-sub-title { font-size: 1.2rem; }
+  .project-image { height: 120px; }
+  .contact-info-container { min-width: 180px; }
+  .contact-form input, .contact-form textarea { font-size: 0.9rem; }
+  .contact-form button { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+}
+
+/* =============================
+   ✅ Back to Top Buttons
+============================= */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none; /* Hidden by default */
+  z-index: 1000;
+  transition: background 0.3s, transform 0.3s;
+}
